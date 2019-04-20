@@ -1,0 +1,393 @@
+/*
+ Theme Name:   Traveler
+ Description:  Traveling Blog Parent Theme
+ Author:       Mohamed Ahmed (Gad)
+ Author URI:   https://www.upwork.com/freelancers/~014e23ef5b9c4cdd32 
+ Version:      1.0.0
+ License:  	   GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, Travel, top-sidebar, responsive-layout, accessibility-ready
+*/
+
+/* Start Main Rules */
+
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('fonts/GillSansStd.otf');
+}
+
+body{ 
+	color: #000;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+label{
+	display: block!important
+}
+/* End Main Rules */
+
+/* Start Bootstrap Rules */
+
+.navbar{
+	min-height: 110px;
+	margin-bottom: 80px
+}
+
+.navbar-default{
+	background-color: transparent;
+	border: none
+}
+
+/* navbar header = button that appears in mobile size and the logo */
+
+.navbar-header .navbar-brand{
+	height: auto
+}
+
+.navbar-header .navbar-toggle{
+	margin-top: 60px
+}
+
+/* start collapse (links on navbar on large screen) */
+
+.navbar-default .navbar-collapse{
+	margin-top: 45px;
+	width: 100%;
+	border: none
+}
+
+.navbar-default .navbar-nav > li > a{
+	font-weight: 300;
+	font-size: 25px;
+	color: #8c8c8c;
+	padding-right: 0;
+	padding-left: 20px
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover{
+	color: #000;
+	background-color: transparent
+}
+
+/* End Bootstrap Rules */
+
+/* Start Posts */
+
+.main-post{
+    margin-bottom:30px
+}
+
+.main-post h3{
+    margin: 15px 30px 10px;
+    font-weight: bold;
+    color: #777;
+    letter-spacing: -1px;
+	font-size: 40px;
+	font-weight: normal;
+}
+
+.main-post h3 a{
+	text-decoration:none;
+	color: #000!important;
+}
+
+.post-date{
+    font-size: 20px;
+	color: #8c8c8c;
+	margin-bottom:80px
+}
+
+.wp-post-image{
+    display: block;
+	min-width: 100%;
+	margin: auto;
+	border: none;
+	padding: 0;
+    border-radius: 0;
+}
+
+.post-content{
+    line-height: 1.5;
+}
+
+.main-post i{color: #999}
+
+.post-pagination{
+    margin: 28px auto 30px;
+    text-align: center;
+	margin-top: 50px
+}
+
+.post-pagination a,
+.post-pagination li{
+    border-radius: 5px;
+	font-size: 20px;
+	color:#4d4d4d;
+	text-decoration: none;
+	padding: 0;
+}
+
+.post-pagination li{
+	color:  #8c8c8c;
+}
+
+/* End Posts */
+
+/* Start Profile */
+.profile{margin-bottom: 290px}
+
+.page-title,
+.page-title:hover{
+	color: #000;
+	font-size: 60px;
+	text-decoration: none
+}
+
+.sub-title{
+	color: #8c8c8c;
+	margin-top: 25px;
+	margin-bottom: 90px;
+}
+
+.profile-data .lead{
+	font-size: 30px
+}
+
+/* End Profile */
+
+/* Start Single Post Page */
+
+.post-page h1 a{
+	font-size: 55px;
+    color: #000;
+    text-decoration: none;
+	font-weight: normal
+}
+
+.post-page .post-date{
+	margin-top: 20px;
+	margin-bottom: 170px
+}
+
+.post-page h2{
+	font-size: 33px;
+	margin-bottom: 0;
+	padding-left: 15px
+}
+
+.post-page h2 a{
+	text-decoration: none
+}
+
+.post-page .post-content{
+	margin-top: 90px;
+}
+
+.post-page .related-posts .post-date{
+	margin: 5px 0 40px 0;
+	color: #8c8c8c;
+}
+
+.post-page .related-posts .h1 a{
+	color:#000}
+
+.post-page .related-posts .img-thumbnail{
+	border: none;
+	height: 270px
+}
+
+/* End Single Post Page */
+
+/* Start Comments */
+
+.comments{
+	margin-bottom: 120px
+}
+
+.comments h1{
+	padding-left: 15px;
+	margin-bottom: 100px;
+	margin-top:130px
+}
+
+.comments li{
+	margin-bottom:40px 
+}
+
+.comments li .comment-body{
+	position: relative
+}
+
+.comments li .comment-body .comment-author{
+	font-size: 35px;
+	position: relative
+}
+
+.comments li .comment-body .comment-author .says,
+.comments li .comment-body .comment-meta .comment-edit-link{
+	display: none
+}
+
+.comments li .comment-body .comment-author .fn{
+	position: absolute;
+    top: 0px;
+    left: 75px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.comments li .comment-body .comment-author .fn a,
+.comments li .comment-body .comment-author .fn a:hover{
+	color: #000;
+	text-decoration: none;
+}
+
+.comments li .comment-body .comment-meta{
+	position: absolute;
+	top: 35px;
+    left: 75px;
+    font-size: 16px;
+}
+
+.comments li .comment-body .comment-meta a{
+	color: #8a8a8a;
+	text-decoration: none
+}
+
+.comments li .comment-body p{
+	margin-top: 15px;
+	margin-bottom: 0;
+	word-wrap: break-word;
+	font-size: 21px
+}
+
+.comments li .comment-body .reply a,
+.comments li .comment-body .reply a:hover{
+	color: #000;
+	text-decoration: none;
+	font-size: 21px;
+    font-weight: 600;
+	font-style: italic
+}
+
+.comments li  .children li{
+	list-style: none;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.comments .comment-reply-title a,
+.comments .comment-reply-title a:hover{
+	color: #000;
+	text-decoration: none
+}
+.comments .comment-reply-title small a{
+	float: right;
+	padding-right: 15px;
+	margin-top: 15px
+}
+
+.comments form .form-group{
+	margin-bottom: 35px
+}
+
+.comments form label{
+	font-size: 25px;
+	margin-bottom: 10px;
+	font-weight: 300
+}
+
+.comments form .form-control{
+	border-radius: 0;
+	border: 1px solid #000;
+}
+
+.comments form textarea{
+	resize: none
+}
+
+.comments form .name .form-control,
+.comments form .mail .form-control{
+	height: 60px;
+}
+
+.comments form input[type="submit"]{
+	height: 80px;
+	width: 150px;
+	background-color: #000;
+	color: #fff;
+	font-size: 30px;
+	font-weight: normal;
+	margin-left: 15px
+}
+
+/* End Comments */
+
+/* Start Footer */
+
+.copy{
+    color: #8c8c8c;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+	margin-top: 100px
+}
+
+/* End Footer */
+
+/* Start Media */
+
+@media (min-width: 768px){
+	.col-sm-4 {
+    width: 30%;
+	}
+}
+
+@media (max-width: 768px){
+	.profile-data{
+		text-align: center
+	}
+	
+	.navbar{
+		margin-bottom: 40px
+	}
+	
+	.post-page .post-date,
+	.post-date,
+	.sub-title{
+		margin-bottom: 90px
+	}
+	
+	.post-page .post-content{
+		margin-top: 70px
+	}
+	
+	.comments h2{
+		margin-top: 50px
+	}
+	
+	.comments{
+		margin-bottom: 80px
+	}
+	
+	.copy{
+		margin-top: 50px
+	}
+	
+	.post-pagination{
+		margin-top: 10px;
+		margin-bottom: 0
+	}
+	
+}
+
+@media (min-width: 1200px){
+	.container {
+    	width: 1000px;
+	}
+}
+
+/* End Media */
